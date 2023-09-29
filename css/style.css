@@ -119,12 +119,13 @@ img {
 
 .list-item {
   color: #404bbf;
-  position: relative;
+
 }
 
 
 .list-link {
   display: flex;
+    position: relative;
 
   padding: 24px 0;
 
@@ -135,6 +136,10 @@ img {
   letter-spacing: 0.02em;
 
   transition: color 300ms ease-in-out;
+}
+
+.active {
+  color: var(--ocean-color);
 }
 
 .list-link::after{
@@ -148,7 +153,7 @@ img {
         border-radius: 2px;
         opacity: 0;
       
-        transition: opacity 200ms ease-out;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-link:active::after,
@@ -162,8 +167,8 @@ img {
   width: 100%;
   background-color: var(--ocean-color);
   border-radius: 2px;
-  opacity: 1;
 
+  opacity: 1;
 }
 
 .list-link:focus, 
@@ -574,7 +579,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--iris-color);
   border-radius: 50%;
 
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-links-link:hover,
