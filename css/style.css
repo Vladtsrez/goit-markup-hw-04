@@ -449,14 +449,16 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-card-items:hover .portfolio-cover-text-wrap,
-.portfolio-card-items:focus .portfolio-cover-text-wrap {
+.portfolio-card-items:hover .portfolio-cover-text,
+.portfolio-card-items:focus .portfolio-cover-text {
   transform: translateY(0%);
+
 }
 
 .portfolio-cover-wrap {
   position: relative;
-  overflow: hidden;
+    overflow: hidden;
+
 }
 
 .portfolio-card-description {
